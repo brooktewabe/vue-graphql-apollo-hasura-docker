@@ -1,32 +1,32 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view />
+    <div class="img-wrapper">
+      <img alt="Vue logo" src="./assets/logo.png" />
+    </div>
+    <add-movie />
+    <movies-list />
   </div>
 </template>
 
+<script>
+import MoviesList from "./components/MoviesList.vue";
+import AddMovie from "./components/AddMovie.vue";
+
+export default {
+  name: "app",
+  components: {
+    MoviesList,
+    AddMovie,
+  },
+};
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.app {
+  margin: auto;
+  width: 50%;
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.img-wrapper {
+  display: flex;
+  justify-content: center;
 }
 </style>
