@@ -6,10 +6,9 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import VueApollo from "vue-apollo";
 
 const httpLink = new HttpLink({
-  uri: "https://nearby-barnacle-92.hasura.app/v1/graphql",
+  uri: "YOUR_HASURA_URL",
   headers: {
-    "x-hasura-admin-secret":
-      "0N89apDMRhaTWQnVrP5yyarb5Dxa3TVpLBnWeSLB18bfQ7X4l5mg74Y5fKIyeOT7",
+    "x-hasura-admin-secret": "YOUR_KEY",
     // 'x-hasura-access-key': 'YOUR_ACCESS_KEY'    // Alternatively, use this header if required
   },
 });
