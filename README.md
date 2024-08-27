@@ -1,5 +1,7 @@
 # vue-graphql-hasura
 
+First go to https://hasura.io/ , create your free account and postgres based database and use the keys on main.js
+
 ## Project setup
 ```
 npm install
