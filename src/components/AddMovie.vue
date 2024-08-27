@@ -1,13 +1,20 @@
 <template>
-  <div class="submit-form">
-    <form @submit.prevent="submit">
-      <fieldset>
+  <div class="submit-form-container">
+    <h2>Add Movie</h2>
+    <form @submit.prevent="submit" class="submit-form">
+      <div class="form-group">
         <input type="text" placeholder="Title" v-model="title" />
+      </div>
+      <div class="form-group">
         <input type="text" placeholder="Director" v-model="director" />
+      </div>
+      <div class="form-group">
         <input type="text" placeholder="Composer" v-model="composer" />
+      </div>
+      <div class="form-group">
         <input type="text" placeholder="Release date" v-model="release_date" />
-      </fieldset>
-      <input class="button-primary" type="submit" value="Send" />
+      </div>
+      <button type="submit" class="submit-button">Send</button>
     </form>
   </div>
 </template>
@@ -71,11 +78,40 @@ export default {
 };
 </script>
 <style>
-form {
-  width: 50%;
+.container {
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 2rem;
 }
+
 .submit-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
 }
 </style>

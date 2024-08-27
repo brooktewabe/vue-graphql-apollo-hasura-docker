@@ -8,7 +8,7 @@ import VueApollo from "vue-apollo";
 const httpLink = new HttpLink({
   uri: "YOUR_HASURA_URL",
   headers: {
-    "x-hasura-admin-secret": "YOUR_KEY",
+    "x-hasura-admin-secret": "YOUR_HASURA_SECRET",
     // 'x-hasura-access-key': 'YOUR_ACCESS_KEY'    // Alternatively, use this header if required
   },
 });

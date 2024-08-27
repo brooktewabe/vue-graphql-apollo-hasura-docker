@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="img-wrapper">
-      <img alt="Vue logo" src="./assets/logo.png" />
+    <div>
+      <h3>Vue js GraphQL Hasura Demo</h3>
     </div>
     <add-movie />
     <movies-list />
@@ -20,13 +20,9 @@ export default {
   },
 };
 </script>
-<style>
-.app {
-  margin: auto;
-  width: 50%;
-}
-.img-wrapper {
-  display: flex;
-  justify-content: center;
+<style scoped>
+h3 {
+  /* text-align: center; */
+  padding-left: 7cm;
 }
 </style>
