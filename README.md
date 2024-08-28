@@ -1,4 +1,4 @@
-# vue-graphql-hasura
+# vue-graphql-apollo-hasura-docker
 
 This is a simple movie CRUD demo app that uses hasura graphql and apollo. </br>
 Hasura is a powerful graphQL engine that can be used as your API 
